@@ -1,0 +1,82 @@
+header {
+    background-color: var(--secondary);
+}
+.navbar {
+    display: flex;
+    max-width: 2000px;
+    margin-inline: auto;
+    align-items: center;
+    width: 100%;
+    padding: 24px 32px;
+    color: var(--text-light);
+    position: relative;
+}
+.nav-logo {
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+.settings-button-container {
+    margin-left: auto;
+    position: relative;
+}
+.settings-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+.settings-button:focus-visible {
+    outline: transparent;
+}
+.settings-button svg {
+    color: var(--primary);
+    width: 28px;
+    height: 28px;
+}
+section.settings {
+    position: absolute;
+    background-color: var(--secondary);
+    top: 70%;
+    right: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 300px;
+    width: 80%;
+
+    opacity: 0;
+    transition-property: opacity, top, right;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+}
+section.settings.expanded {
+    opacity: 1;
+    top: calc(100% + 10px);
+    pointer-events: all;
+    right: 10px;
+}
+.theme-option {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar {
+        padding: 24px 48px;
+    }
+    .nav-logo {
+        font-size: 32px;
+    }
+    .settings-button svg {
+        width: 32px;
+        height: 32px;
+    }
+}
