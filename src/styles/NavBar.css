@@ -7,12 +7,12 @@ header {
     margin-inline: auto;
     align-items: center;
     width: 100%;
-    padding: 24px 32px;
+    padding: 1.5rem 2rem;
     color: var(--text-light);
     position: relative;
 }
 .nav-logo {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     color: var(--text-light);
@@ -25,6 +25,7 @@ header {
     background-color: transparent;
     border: none;
     display: flex;
+    cursor: pointer;
 }
 .settings-button:focus-visible {
     outline: transparent;
@@ -45,7 +46,7 @@ section.settings {
     gap: 0.5rem;
     border-radius: 14px;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     max-width: 300px;
     width: 80%;
@@ -70,10 +71,10 @@ section.settings.expanded {
 
 @media only screen and (min-width: 400px) {
     .navbar {
-        padding: 24px 48px;
+        padding: 1.5rem 3rem;
     }
     .nav-logo {
-        font-size: 32px;
+        font-size: 2rem;
     }
     .settings-button svg {
         width: 32px;
