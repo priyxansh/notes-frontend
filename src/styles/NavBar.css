@@ -22,10 +22,9 @@ header {
     position: relative;
 }
 .settings-button {
-    background-color: transparent;
-    border: none;
     display: flex;
-    cursor: pointer;
+    padding: 0;    
+    background: transparent;
 }
 .settings-button:focus-visible {
     outline: transparent;

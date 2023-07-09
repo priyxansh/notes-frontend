@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Home from "./pages/Home";
 
 function App() {
     // Todo
@@ -20,6 +21,11 @@ function App() {
             <header>
                 <NavBar title={"Sync"} />
             </header>
+            <main>
+                <Routes>
+                    <Route path="/" exact element={<Home />} />
+                </Routes>
+            </main>
         </Router>
     );
 }
