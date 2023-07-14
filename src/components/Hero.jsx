@@ -23,13 +23,13 @@ const Hero = () => {
             <div className="button-container">
                 <button
                     className="login primary"
-                    onClick={() => navigate("/auth/login")}
+                    onClick={() => navigate("/auth/login/")}
                 >
                     Login
                 </button>
                 <button
                     className="get-started primary"
-                    onClick={() => navigate("/auth/signup")}
+                    onClick={() => navigate("/auth/signup/")}
                 >
                     Get Started
                 </button>

@@ -1,0 +1,8 @@
+section.login-form{
+    /* Temporary */
+    width: 700px;
+    aspect-ratio: 2/1.5;
+    border: 2px solid red;
+    
+    border-radius: 14px;
+}

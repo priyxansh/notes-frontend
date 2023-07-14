@@ -1,7 +1,6 @@
 import React from "react";
 
 const Settings = ({ isExpanded }) => {
-    console.log(isExpanded);
     return (
         <section className={`settings ${isExpanded ? "expanded" : ""}`}>
             <ThemeSelection />

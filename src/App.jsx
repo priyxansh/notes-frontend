@@ -3,6 +3,7 @@ import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Home from "./pages/Home";
+import Auth from "./pages/Auth";
 
 function App() {
     // Todo
@@ -13,7 +14,7 @@ function App() {
     }, []);
 
     useEffect(() => {
-        console.log(isAuth);
+        // console.log(isAuth);
     }, [isAuth]);
 
     return (
@@ -24,6 +25,7 @@ function App() {
             <main>
                 <Routes>
                     <Route path="/" exact element={<Home />} />
+                    <Route path="auth/*" element={<Auth />} />
                 </Routes>
             </main>
         </Router>
