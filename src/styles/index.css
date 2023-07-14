@@ -1,12 +1,12 @@
 /* Font import */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Raleway:wght@500&display=swap");
 
-/* Defining Colors */
+/* Defining Colors in hsl*/
 :root {
-    --text-light: #ffffff;
-    --text-dark: #0b0514;
-    --background: #0b0514;
-    --primary: #9e75db;
-    --secondary: #190c2d;
-    --accent: #ac89e1;
+    --text-light: 0, 0%, 100%;
+    --text-dark: 264, 60%, 5%;
+    --background: 264, 60%, 5%;
+    --primary: 264, 59%, 66%;
+    --secondary: 264, 58%, 11%;
+    --accent: 264, 59%, 71%;
 }

@@ -1,5 +1,6 @@
 header {
-    background-color: var(--secondary);
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--text-light));
 }
 .navbar {
     display: flex;
@@ -8,14 +9,13 @@ header {
     align-items: center;
     width: 100%;
     padding: 1.5rem 2rem;
-    color: var(--text-light);
     position: relative;
 }
 .nav-logo {
     font-size: 1.75rem;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    color: var(--text-light);
+    color: hsl(var(--text-light));
 }
 .settings-button-container {
     margin-left: auto;
@@ -23,20 +23,20 @@ header {
 }
 .settings-button {
     display: flex;
-    padding: 0;    
+    padding: 0;
     background: transparent;
 }
 .settings-button:focus-visible {
     outline: transparent;
 }
 .settings-button svg {
-    color: var(--primary);
+    color: hsl(var(--primary));
     width: 28px;
     height: 28px;
 }
 section.settings {
     position: absolute;
-    background-color: var(--secondary);
+    background-color: hsl(var(--secondary));
     top: 70%;
     right: 0;
     padding: 1.5rem;
